@@ -84,26 +84,3 @@ class OBJParser {
         console.error('解析OBJ文件时出错:', error);
     }
 })();
-
-/*
-
-In-Desmos useful console snippets:
-
-// First, create a folder in the expressions list to store the data, with name ("Data" for example).
-// Create 2 expressions in the folder as placeholders. They would be where "V" and "F" will be stored.
-// Next, paste this line in the console and paste the huge JSON string following it.
-exps=
-      ^(paste the JSON string here)
-
-// Then, modify these params, then paste & run:
-Calc = Calc				// Or whatever the environment is
-folderTitle = "Data" 	// Or anything youve used 
-
-// Main code --- paste & run finally
-stateExps = Calc.getState().expressions.list
-folderId = stateExps.find(e => e.type === "folder" && e.title === folderTitle).id
-expIds = stateExps.filter(e => e.folderId === folderId).map(e => e.id).slice(-2)
-exps = exps.map((exp, i) => ({...exp, "id": expIds[i]}))
-Calc.setExpressions(exps)
-
-*/
