@@ -1,0 +1,21 @@
+{
+  "name": "911",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/three": "^0.168.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@types/node": "^22.5.4",
+    "three": "^0.168.0"
+  }
+}
